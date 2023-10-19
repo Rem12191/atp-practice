@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Tahoma;
   scroll-behavior: smooth;
 }
 
@@ -365,6 +365,14 @@ header .navigation li .nav-link:hover {
    margin-bottom: 15px;
    font-weight: 300;
 }
+.row {
+  padding-top: 40px;
+}
+.contact {
+  padding-top: 40px;
+}
+
+
 
 }
 @media (max-width: 480px) {
@@ -373,6 +381,7 @@ header .navigation li .nav-link:hover {
         color: #fff;
         padding-right: 3px;
         padding-left: 5px;
+        
     }
     .logo-container,
     .drawing-container {

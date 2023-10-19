@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"></html>
-<html>
-  <head>
-    <title>Avalon</title>
+<html lang="en">
+<head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Avalon</title>
+        <title>Avalon Adventures</title>
         <link rel="stylesheet" type="text/css" href="../styles/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700,800,900&display=swap">
-    </head>
+
     <style> 
         .banner {
           position: relative;
@@ -87,7 +86,7 @@
         
         
         
-        .expert .content {
+        /*.expert .content {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -99,6 +98,8 @@
             margin: 15px;
             
         }
+      
+
         .expert .content .box .imgBx {
             position: relative;
             width: 100%;
@@ -122,9 +123,81 @@
         .expert .content .box .text p {
             text-align: justify; 
             overflow: hidden;
-        } 
-        
-        </style>
+        } */
+       /* Initially set the opacity of the <p> text to 0 
+.text p {
+    opacity: 0;
+    transition: opacity 0.3s; /* Add a transition for a smooth effect 
+}*/
+
+/* When the parent box is hovered, reveal the <p> text 
+.box:hover .text p {
+    opacity: 1;
+}*/
+.expert .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.expert .content .box {
+    width: 100%; /* Make the box take up the full width */
+    display: flex;
+    justify-content: space-between; /* Place the text and image at the ends */
+    align-items: center; /* Vertically center text and image */
+    margin: 15px;
+    text-align: center;
+}
+
+.expert .content .box .imgBx {
+    width: 300px; /* Fixed width for the images */
+    height: 350px; /* Fixed height for the images */
+}
+
+.expert .content .box .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .box .text {
+    width: calc(100% - 160px); /* Adjust the width to control the text size, considering margin */
+    padding: 15px;
+    text-align: left; /* Adjust text alignment as needed */
+}
+
+.expert .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+.expert .content .box .text p {
+    text-align: justify;
+}  
+
+
+@media (max-width: 768px) {
+  /* Rearrange the order of .co150 elements to display image first */
+  .row .co150 {
+    flex-direction: column;
+  }
+
+  .row .co150 .imgBx {
+    order: 1; /* Display the image first */
+    margin-top: 20px; /* Add margin to create a gap */
+  }
+
+  .row .co150 h2 {
+    order: 2; /* Display the text second */
+  }
+}   
+   
+
+  
+</style>
+</head>
+<body>
     <header id="site-header">
         <a href="/" class="logo">Avalon Adventures<span>.</span></a>
         <div class="menuToggle" id="menuToggle" onclick="toggleMenu()"></div>
@@ -135,12 +208,12 @@
           <li><a href="contacts.html" class="nav-link">Contacts</a></li>
          </ul>
       </header>
-      <body>
+      
       <section class="banner" id="banner">
         <div class="row">
                   <div class="co150">
                       <h2 class="tittleText"><span>A</span>bout us</h2>
-                      <p>"Welcome to Avalon Adventures, your local destination for unforgettable family adventures on the Avalon Peninsula of Newfoundland! We are a team of travel enthusiasts who are passionate about showcasing the beauty and wonder of this incredible region to families from near and far. 
+                      <p>"Welcome to Avalon Adventures, your local destination for unforgettable family adventures on the Avalon Peninsula of Newfoundland! <br>We are a team of travel enthusiasts who are passionate about showcasing the beauty and wonder of this incredible region to families from near and far. 
       
        
       
@@ -187,7 +260,7 @@
               <div class="content">
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://images.pexels.com/photos/1104007/pexels-photo-1104007.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                          <img src="https://media.istockphoto.com/id/1364917563/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%BC%D0%B5%D0%BD-%D1%83%D0%BB%D1%8B%D0%B1%D0%B0%D0%B5%D1%82%D1%81%D1%8F-%D1%81%D0%BE-%D1%81%D0%BA%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D1%80%D1%83%D0%BA%D0%B0%D0%BC%D0%B8-%D0%BD%D0%B0-%D0%B1%D0%B5%D0%BB%D0%BE%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5.jpg?b=1&s=612x612&w=0&k=20&c=v3ZqzjSOmNd-gmFYue7UVb0zc8_wBAVjB1k8_3tTySo=">
                       </div>
                       <div class="text">
                           <h3>Chef – Jason Asano</h3>
@@ -196,7 +269,7 @@
                   </div>
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://images.pexels.com/photos/590471/pexels-photo-590471.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                          <img src="https://media.istockphoto.com/id/973714826/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%83%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B7%D1%80%D0%B5%D0%BB%D1%8B%D0%B9-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%BC%D0%B5%D0%BD-%D0%B2-%D0%BE%D1%84%D0%B8%D1%81%D0%B5.jpg?b=1&s=612x612&w=0&k=20&c=DZT0rn-QhlQwaLSL7XR-18Y7VVGZszE3wvxKscQr-TY=">
                       </div>
                       <div class="text">
                           <h3>Beer Safari Guide – Gary Xandier</h3>
@@ -205,7 +278,7 @@
                   </div>
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://images.pexels.com/photos/2026960/pexels-photo-2026960.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                          <img src="https://media.istockphoto.com/id/1298074216/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82-%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%D1%8B-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0.jpg?b=1&s=612x612&w=0&k=20&c=M2bbdjjf9teU-5Jg7ZZM3gM1NlYZTaQhl1VZ-I_4s70=">
                       </div>
                       <div class="text">
                           <h3>Wave Whisperer – Neil Davone </h3>
@@ -214,7 +287,7 @@
                   </div>
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://images.pexels.com/photos/573285/pexels-photo-573285.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                          <img src="https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
                       </div>
                       <div class="text">
                           <h3>Trailblazers – Humphrey Geller and Sophie Wexler </h3>
@@ -225,7 +298,7 @@
                   </div>
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://images.pexels.com/photos/1858057/pexels-photo-1858057.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1600">
                       </div>
                       <div class="text">
                           <h3>Ferryland Fun Master – Rufus Remore</h3>
@@ -242,16 +315,16 @@
                   </div>
                   <div class="box">
                       <div class="imgBx">
-                          <img src="https://images.pexels.com/photos/1374509/pexels-photo-1374509.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                          <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600">
                       </div>
                       <div class="text">
                           <h3>Family Fun Facilitator - Clive Standish </h3>
                           <p>Clive Standish is a cultural expert and a PhD holder in Newfoundland and Labrador folklore. With a passion for sharing his knowledge and experience, he has become an exceptional guide for cultural activities in Newfoundland. Clive's unique ability to engage with people of all ages, including children, has made him a popular Family Fun Facilitator. His love for the rich cultural heritage of Newfoundland and Labrador is contagious, and he is always eager to share stories, songs, and traditions with visitors. With Clive as your guide, you can be assured of a memorable and educational experience that will leave you with a deeper appreciation for the cultural history of Newfoundland and Labrador. </p>
                       </div>
                   </div>
-                  <!--<div class="box"> 
+                  <div class="box"> 
                       <div class="imgBx">
-                          <img src="https://images.pexels.com/photos/1006363/pexels-photo-1006363.jpeg?auto=compress&cs=tinysrgb&w=1600">
+                          <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1600">
                       </div>
                       <div class="text">
                           <h3>Administration Ace – Belinda Callahan </h3>
@@ -265,13 +338,13 @@
       
       In her free time, Belinda loves to read and travel. She is also an avid baker and her delicious treats are often the highlight of our office gatherings. We are lucky to have Belinda on our team and appreciate all that she does to keep us organized and on track. </p>
                       </div>
-                  </div>-->
+                  </div>
               </div>  
           </section>
       <div class="copyrightText">
               <p>Copyright 2023 <a href="#"> Avalon Adventures </a> All Right Reserved</p>
           </div>
-    </body>
+    
       <script type="text/javascript">
           window.addEventListener('scroll', function() {
             const header = document.getElementById('site-header');
@@ -286,3 +359,5 @@
             navigation.classList.toggle('menuToggleActive');
           }
         </script>
+</body>
+</html>
